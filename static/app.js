@@ -1,11 +1,9 @@
-let myMap = L.map("map", {
-    center: [40.7128, -74.0059],
-    zoom: 11
-  });
+var map = L.map('map').setView([51.505, -0.09], 13);
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(myMap);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
 
 // d3.csv("./Raw_Data/Annual_Surface_Temp_Change.csv").then((data) => {
 //     console.log(data);
