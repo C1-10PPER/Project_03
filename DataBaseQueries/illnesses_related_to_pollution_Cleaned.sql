@@ -20,6 +20,7 @@ WHERE objectid IN (
     SELECT objectid FROM duplicates WHERE rn > 1
 );
 
+
 SELECT 
     year, 
     age_group, 
@@ -31,4 +32,10 @@ FROM
 GROUP BY 
     year, age_group, ghe_cause
 ORDER BY 
-    year, age_group, ghe_cause;
+    
+	 age_group ASC, avg_mean_value DESC
+	
+ sort
+
+
+	
