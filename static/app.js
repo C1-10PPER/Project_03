@@ -48,6 +48,9 @@ var baseLayer = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
     maxZoom: 5
   }).addTo(map);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 >>>>>>> 78d0bc6ab714be1553d230b9d48d18f5208aacc2
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
