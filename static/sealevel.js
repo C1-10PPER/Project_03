@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Satellite": satellite
     };
 
-    // Addd layer control to the map that will allow the user
+    // Added layer control to the map that will allow the user
     // to change which layers are visible
     L.control.layers(baseMaps).addTo(map);
 
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
         slider.addEventListener("input", function () {
             let date = dates[this.value]; // Get selected date from array
             label.innerText = date; // Update label
-            console.log("Selected Date:", date); // Debugging log
+            // console.log("Selected Date:", date); // Debugging log
             updateMap(date); // Update map with new data
         });
 

@@ -1,4 +1,5 @@
 
+
 // // Created a street tile layer.
 // let street = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 //     maxZoom: 19,
@@ -18,16 +19,6 @@
 
 // street.addTo(map);
 
-<<<<<<< HEAD
-let baseMaps = {
-    "Street": street,
-    // "Satellite": satellite,
-  };
-// d3.csv("./Raw_Data/Annual_Surface_Temp_Change.csv").then((data) => {
-//     console.log(data);
-//     L.geoJson(data).addTo(myMap);
-// });
-=======
 
 
 // // d3.csv("./Raw_Data/Annual_Surface_Temp_Change.csv").then((data) => {
@@ -56,4 +47,7 @@ var baseLayer = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
     blur: 15,
     maxZoom: 5
   }).addTo(map);
+<<<<<<< Updated upstream
 >>>>>>> 78d0bc6ab714be1553d230b9d48d18f5208aacc2
+=======
+>>>>>>> Stashed changes
