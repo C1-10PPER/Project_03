@@ -35,10 +35,14 @@ body {
     align-items: flex-start;
 }
 
-/* Make the nav items bold */
+/* Made "Home" and "Visualizations" bold in the navbar */
 .navbar .nav-item a {
-    font-weight: bold; 
-    padding: 10px 15px; 
+    font-weight: bold; /* Bold font for "Home" and "Visualizations" */
+}
+
+/* Ensure that dropdown items in "Visualizations" are not bold */
+.navbar .dropdown-menu .dropdown-item {
+    font-weight: normal;
 }
 
 /* Ensure each nav item has some margin between them */

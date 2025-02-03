@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const csvFilePath = "../Clean_Data/illnesses_related_to_pollution.csv";
+    const csvFilePath = "./Clean_Data/illnesses_related_to_pollution.csv";
     let chartInstance = null;
     
     async function fetchData() {

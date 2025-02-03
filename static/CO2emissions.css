@@ -6,6 +6,20 @@ body {
     padding: 0;
 }
 
+/* Improve navbar styling */
+.navbar {
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff;
+}
 /* Container for the entire chart and slider */
 #sliderContainer {
     text-align: center;
