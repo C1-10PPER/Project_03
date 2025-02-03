@@ -24,22 +24,24 @@ body {
 #sliderContainer {
     text-align: center;
     margin: 20px 0;
-    background: linear-gradient(to right, #4facfe, #00f2fe);  /* Gradient background */
+    /* background: linear-gradient(to right, #4facfe, #00f2fe);  Gradient background */
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+    gap: 20px;
 }
 
 /* Year Slider Label */
 #sliderContainer label {
     font-size: 20px;
-    color: white;
+    color: black;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 /* Style the slider itself */
 #sliderContainer input[type="range"] {
-    width: 80%;
+    width: 50%;
     height: 10px;
     background: #ddd;
     border-radius: 5px;
@@ -65,7 +67,7 @@ body {
 /* Style the year label */
 #sliderContainer span#selectedYear {
     font-size: 22px;
-    color: white;
+    color: black;
     font-weight: bold;
     margin-left: 10px;
 }
@@ -94,3 +96,4 @@ body {
     color: #333;
     margin-left: 10px;
 }
+

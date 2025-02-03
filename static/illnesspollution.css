@@ -4,6 +4,51 @@
     margin: auto;
     margin-top: 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+h2 {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.scroll-container {
+    width: 80%;
+    margin-left: 20px;
+    text-align: left;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+#yearScrollArea {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    white-space: nowrap; /* Prevent wrapping of the year buttons */
+    width: 100%;
+}
+
+.year-box {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    min-width: 80px; /* Optional: Control button width */
+    text-align: center;
+}
+
+.year-box:hover {
+    background-color: #673AB7;
 }

@@ -18,7 +18,7 @@
             background: linear-gradient(45deg, #2196F3, #673AB7);
         }
         .navbar a {
-            color: white !important;
+            color: black !important;
         }
         .navbar .dropdown-menu {
             background-color: #673AB7;
@@ -57,28 +57,30 @@
         .form-select {
             width: 250px;
             margin: auto;
-            background-color: #ffeb3b;
+            /* background-color: #ffeb3b; */
             color: black;
             font-weight: bold;
-            border: 2px solid #ff9800;
+            /* border: 2px solid #ff9800; */
         }
         .form-select:focus {
             border-color: #ff5722;
             box-shadow: 0px 0px 5px rgba(255, 87, 34, 0.8);
         }
 
-        /* Footer */
+        /* Footer
         footer {
             margin-top: 50px;
             padding: 10px;
             background: linear-gradient(45deg, #673AB7, #2196F3);
             color: white;
             font-weight: bold;
-        }
+        } */
     </style>
 </head>
 <body>
-    
+
+    <h2>Illnesses Related to Pollution</h2>
+
     <!-- Navbar with Home Button & Dropdown -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -112,21 +114,21 @@
         </div>
     </nav>
 
-    <!-- Filter Dropdown for Year Selection -->
-    <div class="filter-container">
-        <label for="yearFilter" style="font-size: 18px; font-weight: bold;">Select Year:</label>
-        <select id="yearFilter" class="form-select"></select>
+    <!-- Year Scroll Area -->
+    <div>
+        <!-- <div id="currentYear">Year: </div> -->
+        <div id="yearScrollArea"></div>
     </div>
-    <h2>Illness Related to Pollution</h2>
+
     <!-- Chart Container -->
     <div class="container">
         <canvas id="illnessChart"></canvas>
     </div>
 
-    <!-- Footer -->
+    <!-- Footer
     <footer>
         <p>🌍 Climate & Health Insights</p>
-    </footer>
+    </footer> -->
 
 </body>
 </html>

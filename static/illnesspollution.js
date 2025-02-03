@@ -107,26 +107,55 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    function populateYearFilter(data) {
-        const yearFilter = document.getElementById("yearFilter");
-        const uniqueYears = [...new Set(data.map(d => d.year))];
 
-        uniqueYears.forEach(year => {
-            const option = document.createElement("option");
-            option.value = year;
-            option.textContent = year;
-            yearFilter.appendChild(option);
+    function createYearSlider(dates) {
+        if (dates.length === 0) return; // Ensure there are valid dates (years)
+
+        // Create a container for the slider
+        let sliderContainer = document.createElement("div");
+        sliderContainer.style.position = "absolute";
+        sliderContainer.style.bottom = "20px";
+        sliderContainer.style.left = "50%";
+        sliderContainer.style.transform = "translateX(-50%)";
+        sliderContainer.style.zIndex = "1000";
+        sliderContainer.style.background = "white";
+        sliderContainer.style.padding = "10px";
+        sliderContainer.style.borderRadius = "8px";
+        sliderContainer.style.display = "flex";
+        sliderContainer.style.flexDirection = "column";
+        sliderContainer.style.alignItems = "center";
+
+        // Create the range input (slider)
+        let slider = document.createElement("input");
+        slider.type = "range";
+        slider.min = 0;
+        slider.max = dates.length - 1;
+        slider.value = 0;
+        slider.id = "year-slider";
+        slider.style.width = "300px";
+
+        // Create a label to display the selected year
+        let label = document.createElement("div");
+        label.id = "year-label";
+        label.innerText = dates[0];  // Set the initial label text to the first year
+
+        // Add an event listener to update the chart when the slider moves
+        slider.addEventListener("input", function () {
+            let selectedYear = dates[this.value]; // Get the selected year from the array
+            label.innerText = selectedYear; // Update the label text
+            generateChart(data, selectedYear); // Update the chart with data for the selected year
         });
 
-        yearFilter.addEventListener("change", () => {
-            generateChart(data, yearFilter.value);
-        });
-
-        // Initialize with the first year
-        generateChart(data, uniqueYears[0]);
+        // Append the label and slider to the container, then add the container to the document
+        sliderContainer.appendChild(label);
+        sliderContainer.appendChild(slider);
+        document.body.appendChild(sliderContainer);
     }
 
-    fetchData().then(data => {
-        populateYearFilter(data);
+    fetchData().then(fetchedData => {
+        data = fetchedData;
+        const uniqueYears = [...new Set(data.map(d => d.year))].sort();
+        createYearSlider(uniqueYears);  // Create the year slider
+        generateChart(data, uniqueYears[0]);  // Initialize with the first year
     });
 });

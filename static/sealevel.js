@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let dataByDate = {}; 
 
     // Loaded and processed CSV data containing sea level changes
-    d3.csv("./Clean_Data/change_in_mean_sea_levels.csv").then((data) => {
+    d3.csv("./Raw_Data/Change_in_Mean_Sea_Levels.csv").then((data) => {
         let dateSet = new Set(); // Use Set to ensure unique dates
 
         data.forEach(row => {

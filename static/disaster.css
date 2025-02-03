@@ -18,6 +18,7 @@ body {
 
 /* Navbar styles: sets background color and padding */
 .navbar {
+    width: 100%;
     background-color: #f8f9fa;
     padding: 10px;
 }
