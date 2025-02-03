@@ -1,0 +1,82 @@
+/* Style the body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the entire chart and slider */
+#sliderContainer {
+    text-align: center;
+    margin: 20px 0;
+    background: linear-gradient(to right, #4facfe, #00f2fe);  /* Gradient background */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Year Slider Label */
+#sliderContainer label {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Style the slider itself */
+#sliderContainer input[type="range"] {
+    width: 80%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    appearance: none;
+    outline: none;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Slider thumb (the little button you drag) */
+#sliderContainer input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #178cdf;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+
+
+/* Style the year label */
+#sliderContainer span#selectedYear {
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+
+/* Style the legend container */
+#legendContainer {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+}
+
+/* Legend items */
+#legendContainer div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#legendContainer div span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px;
+}

@@ -1,0 +1,28 @@
+/* Ensure the map has enough space */
+#map {
+    height: 600px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Improve navbar styling */
+.navbar {
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff;
+}
+
+/* Ensure dropdown is visible */
+.dropdown-menu {
+    z-index: 1050; /* Make sure it appears above other content */
+}
+
+
