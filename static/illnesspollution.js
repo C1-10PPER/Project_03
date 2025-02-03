@@ -38,9 +38,12 @@ document.addEventListener("DOMContentLoaded", function () {
         // Assign colors to causes
         const colorMap = {};
         const colors = [
-            "rgba(255, 99, 132, 0.6)", "rgba(54, 162, 235, 0.6)",
-            "rgba(255, 206, 86, 0.6)", "rgba(75, 192, 192, 0.6)",
-            "rgba(153, 102, 255, 0.6)", "rgba(255, 159, 64, 0.6)"
+                "rgb(128, 0, 128)",   // Bold Purple
+                "rgb(255, 140, 0)",   // Bold Orange
+                "rgb(30, 144, 255)",  // Dodger Blue
+                "rgb(255, 69, 0)",    // Red-Orange
+                "rgb(0, 128, 128)"    // Teal
+        
         ];
         uniqueCauses.forEach((cause, index) => {
             colorMap[cause] = colors[index % colors.length];
