@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function createYearSlider(dates) {
         if (dates.length === 0) return; // Ensure there are valid dates (years)
 
-        // Create a container for the slider
+        // Created a container for the slider
         let sliderContainer = document.createElement("div");
         sliderContainer.style.position = "absolute";
         sliderContainer.style.bottom = "20px";
@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
         sliderContainer.style.flexDirection = "column";
         sliderContainer.style.alignItems = "center";
 
-        // Create the range input (slider)
+        // Created the range for the slider
         let slider = document.createElement("input");
         slider.type = "range";
         slider.min = 0;
@@ -134,19 +134,19 @@ document.addEventListener("DOMContentLoaded", function () {
         slider.id = "year-slider";
         slider.style.width = "300px";
 
-        // Create a label to display the selected year
+        // Created a label to display the selected year
         let label = document.createElement("div");
         label.id = "year-label";
         label.innerText = dates[0];  // Set the initial label text to the first year
 
-        // Add an event listener to update the chart when the slider moves
+        // Added an event listener to update the chart when the slider moves
         slider.addEventListener("input", function () {
             let selectedYear = dates[this.value]; // Get the selected year from the array
             label.innerText = selectedYear; // Update the label text
             generateChart(data, selectedYear); // Update the chart with data for the selected year
         });
 
-        // Append the label and slider to the container, then add the container to the document
+        // Appended the label and slider to the container, then add the container to the document
         sliderContainer.appendChild(label);
         sliderContainer.appendChild(slider);
         document.body.appendChild(sliderContainer);

@@ -13,6 +13,17 @@
     <script src="static/illnesspollution.js" defer></script>
     
     <style>
+        h2 {
+        text-align: left;
+        margin-left: 20px;
+        font-size: 30px;
+        /* font-weight: bold; */
+        color: black !important;
+        }
+
+        h2.text-primary {
+            color: black !important; /* Override Bootstrap's .text-primary */
+        }        
         /* Custom Navbar Styling */
         .navbar {
             background: linear-gradient(45deg, #2196F3, #673AB7);
@@ -29,12 +40,15 @@
         .navbar .dropdown-item:hover {
             background-color: #512DA8;
         }
-
+        .navbar-nav .nav-item .nav-link {
+            color: #333;
+            font-weight: bold;
+}
         /* General Styling */
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f9;
-            text-align: center;
+            text-align: flex-start;
             color: #333;
         }
         .container {

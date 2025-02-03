@@ -10,6 +10,18 @@ body {
     background-color: #f9f9f9;
 }
 
+h2 {
+    text-align: left;
+    /* margin-left: 20px; */
+    font-size: 30px;
+    /* font-weight: bold; */
+    color: black !important;
+}
+
+h2.text-primary {
+    color: black !important; /* Override Bootstrap's .text-primary */
+}
+
 /* Left-aligned title */
 .left-align {
     align-self: flex-start; /* Align title to the left */

@@ -25,4 +25,15 @@
     z-index: 1050; /* Make sure it appears above other content */
 }
 
+h2 {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 30px;
+    /* font-weight: bold; */
+    color: black !important;
+}
+
+h2.text-primary {
+    color: black !important; /* Override Bootstrap's .text-primary */
+}
 
