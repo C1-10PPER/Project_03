@@ -1,0 +1,151 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: flex-start;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+/* Left-aligned title */
+.left-align {
+    align-self: flex-start; /* Align title to the left */
+    margin-left: 20px;  /* Optional: adds space from the left edge */
+}
+
+/* Navbar styles: sets background color and padding */
+.navbar {
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+/* Align navbar content to the left */
+.navbar .container-fluid {
+    display: flex;
+    justify-content: flex-start; /* Align navbar items to the left */
+}
+
+/* Align navbar items to the left */
+.navbar .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Make the nav items bold */
+.navbar .nav-item a {
+    font-weight: bold; 
+    padding: 10px 15px; 
+}
+
+/* Ensure each nav item has some margin between them */
+.navbar .nav-item {
+    margin-bottom: 5px;
+}
+/* Align navbar-toggler button to the left if collapsed */
+.navbar-toggler {
+    margin-right: auto;
+}
+
+/* Container for Pie Chart & Disaster type selection */
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Center the contents vertically */
+    align-items: center;      /* Center the contents horizontally */
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+}
+
+/* Styles for the pie chart container */
+#chart {
+    width: 60%; 
+    max-width: 600px; 
+    height: 450px; 
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Styles for the country selector */
+.controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Styles for the Select Country label */
+.country-label {
+    font-weight: bold;  
+    margin-right: 10px;  
+    font-size: 1.2em; 
+}
+
+/* Styles for the country selector dropdown */
+.country-selector {
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 300px; 
+}
+
+/* Disaster Selector Container */
+.disaster-selector-container {
+    width: 100%; 
+    max-width: 1000px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Styles for the disaster selector label */
+.disaster-selector-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* Styles for the disaster selector options */
+.disaster-selector {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 10px; 
+}
+
+/* Container for the year slider */
+#slider-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;  
+    width: 100%;
+    max-width: 800px;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styles for the year slider */
+#year {
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Styles for the Year Label */
+#yearLabel {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Styles for the "No Data Available" message */
+#no-data-message {
+    font-weight: bold;
+    color: #e74c3c;
+    margin-top: 20px;
+}
