@@ -53,13 +53,13 @@ document.addEventListener("DOMContentLoaded", function () {
     let dataByDate = {}; 
 
     // Loaded and processed CSV data containing sea level changes
-    d3.csv("./Raw_Data/Change_in_Mean_Sea_Levels.csv").then((data) => {
+    d3.csv("./Clean_Data/change_in_mean_sea_levels.csv").then((data) => {
         let dateSet = new Set(); // Use Set to ensure unique dates
 
         data.forEach(row => {
-            let sea = row.Measure; // Extract sea name
-            let value = parseFloat(row.Value); // Parse sea level change value
-            let date = row.Date; // Extract date
+            let sea = row.measure; // Extract sea name
+            let value = parseFloat(row.value); // Parse sea level change value
+            let date = row.date; // Extract date
 
             // Checked if sea exists in the predefined coordinates and value is valid
             if (locationCoords[sea] && !isNaN(value)) {
@@ -134,12 +134,14 @@ document.addEventListener("DOMContentLoaded", function () {
         // Created a label to display the selected date
         let label = document.createElement("div");
         label.id = "date-label";
-        label.innerText = dates[0];
+        label.innerText = `Date: ${dates[0]}`;
+        label.style.fontWeight = "bold";
+        label.style.fontSize = "20px";
 
         // Created an event listener to update the map and label as the slider moves
         slider.addEventListener("input", function () {
             let date = dates[this.value]; // Get selected date from array
-            label.innerText = date; // Update label
+            label.innerText = `Date: ${date}`; // Update label
             // console.log("Selected Date:", date); // Debugging log
             updateMap(date); // Update map with new data
         });
@@ -159,7 +161,7 @@ function addLegend() {
         div.style.padding = "10px";
         div.style.borderRadius = "5px";
         div.style.boxShadow = "0 0 5px rgba(0,0,0,0.3)";
-        div.style.fontSize = "14px";
+        div.style.fontSize = "16px";
         div.innerHTML = `
             <strong>Sea Level Change</strong><br>
             <i style="background: blue; width: 12px; height: 12px; display: inline-block; margin-right: 5px;"></i> Increase <br>

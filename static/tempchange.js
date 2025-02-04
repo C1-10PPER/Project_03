@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     let heatLayer;
-    let currentYear = 2023;
+    let currentYear = 1961;
 
     // Function to create a heatmap
     function createHeatmap(data, year) {
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Function to add a floating year display and slider to the map
         function addYearSlider() {
-            let sliderContainer = L.control({ position: "topright" });
+            let sliderContainer = L.control({ position: "bottomleft" });
 
             sliderContainer.onAdd = function () {
                 let div = L.DomUtil.create("div", "year-slider");
@@ -78,18 +78,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 div.style.boxShadow = "0 0 8px rgba(0,0,0,0.4)";
                 div.style.fontSize = "16px";
                 div.style.textAlign = "center";
-
+                
                 // Create slider and floating year display
                 div.innerHTML = `
                     <div id="yearDisplay" style="font-size: 20px; font-weight: bold; margin-bottom: 5px; color: #333;">
                         Year: <span id="yearValue">${currentYear}</span>
                     </div>
-                    <input type="range" id="yearRange" min="1961" max="2023" step="1" value="${currentYear}" style="width: 200px;">
-                `;
+                    <input type="range" id="yearRange" min="1961" max="2023" step="1" value="${currentYear}" style="width: 200px;">`;
 
                 let yearDisplay = div.querySelector("#yearValue");
                 let slider = div.querySelector("#yearRange");
-
+                
                 // Add event listener for real-time update
                 slider.addEventListener("input", function (event) {
                     let selectedYear = event.target.value;

@@ -139,6 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
         label.id = "year-label";
         label.innerText = `Year: ${dates[0]}`;  // Set the initial label text to the first year
         label.style.fontWeight = "bold"
+        label.style.fontSize = "21px"; 
 
         // Added an event listener to update the chart when the slider moves
         slider.addEventListener("input", function () {

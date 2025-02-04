@@ -37,12 +37,13 @@ canvas {
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
           
       }
-      #sliderContainer {
+
+#sliderContainer {
   display: flex;
   flex-direction: column;
   align-items: center; /* Center horizontally */
   justify-content: center; /* Center vertically */
-  margin-top: -20px; /* Move it a little up */
+  margin-top: 10px; /* Move it a little up */
 }
 
 #yearSlider {
@@ -51,7 +52,7 @@ canvas {
 }
 
 #selectedYear {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
 }

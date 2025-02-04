@@ -37,4 +37,10 @@ h2.text-primary {
     color: black !important; /* Override Bootstrap's .text-primary */
 }
 
-
+.year-slider {
+    position: fixed !important;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;  /* Adjust as needed to add spacing from the bottom */
+    z-index: 1000;  /* Ensure it's above other elements */
+}
