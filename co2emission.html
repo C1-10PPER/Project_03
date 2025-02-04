@@ -17,6 +17,7 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
+<<<<<<< HEAD
 <style>
   /* Custom Navbar Styling */
   .navbar {
@@ -35,6 +36,10 @@
       background-color: #512DA8;
   }
 </style>
+=======
+
+
+>>>>>>> e536092b50a19c52c32bd4d9a2c67c539237ec98
 <body>
 
     <h2>CO2 Emission</h2>
@@ -67,9 +72,18 @@
           </div>
         </div>
     </nav>
-
+    <!-- <div class="container">
+      <canvas id="co2emission"></canvas>
+  </div> -->
+  
    
-   
+  <div id="chart-container">
+    <canvas id="co2emission"></canvas>
+</div>
+<div id="sliderContainer">
+  
+  <label>Year:<span id="selectedYear"></span></label>
+</div>
     <!-- JavaScript file -->
     <script src="static/CO2emission.js"></script>
 
