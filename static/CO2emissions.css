@@ -13,6 +13,12 @@ body {
 .navbar a {
     color: black !important;
 }
+
+/* Made "Home" and "Visualizations" bold in the navbar */
+.navbar .nav-item a {
+    font-weight: bold; 
+}
+
 .navbar .dropdown-menu {
     background-color: #673AB7;
 }

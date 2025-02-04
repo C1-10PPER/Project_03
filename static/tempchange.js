@@ -89,6 +89,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 let yearDisplay = div.querySelector("#yearValue");
                 let slider = div.querySelector("#yearRange");
                 
+                //Added to improve slider functionality and performance
+                L.DomEvent.disableClickPropagation(div);
+                L.DomEvent.on(div, "wheel", L.DomEvent.stopPropagation);
+                L.DomEvent.on(div, "mousedown", L.DomEvent.stopPropagation);
+                L.DomEvent.on(div, "touchstart", L.DomEvent.stopPropagation);
+                L.DomEvent.on(div, "dblclick", L.DomEvent.stopPropagation);
+
                 // Add event listener for real-time update
                 slider.addEventListener("input", function (event) {
                     let selectedYear = event.target.value;
