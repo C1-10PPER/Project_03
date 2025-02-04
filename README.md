@@ -8,11 +8,9 @@ After assembling our datasets, we utilized JavaScript to develop interactive vis
 
 
 Resources
-
 For this project we have made use of different websites, Xpert Learning Assistant, and class resources as a reference. Data was pulled from the following site.
 
 sources:
-
 
 https://climatedata.imf.org/pages/climatechange-data
 https://www.who.int/data/gho/data/themes/air-pollution/total-burden-of-disease-from-household-and-ambient-air-pollution 
@@ -21,7 +19,6 @@ https://opencagedata.com/
 
 
 File Locations
-
 
 Source data files are found in the Raw_Data folder.
 Cleaned data files are found in the Clean_Data folder.
