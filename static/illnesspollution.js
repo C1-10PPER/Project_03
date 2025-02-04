@@ -137,12 +137,13 @@ document.addEventListener("DOMContentLoaded", function () {
         // Created a label to display the selected year
         let label = document.createElement("div");
         label.id = "year-label";
-        label.innerText = dates[0];  // Set the initial label text to the first year
+        label.innerText = `Year: ${dates[0]}`;  // Set the initial label text to the first year
+        label.style.fontWeight = "bold"
 
         // Added an event listener to update the chart when the slider moves
         slider.addEventListener("input", function () {
             let selectedYear = dates[this.value]; // Get the selected year from the array
-            label.innerText = selectedYear; // Update the label text
+            label.innerText = `Year: ${dates[this.value]}`// Update the label text
             generateChart(data, selectedYear); // Update the chart with data for the selected year
         });
 

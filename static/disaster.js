@@ -74,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         createSlider();
+        yearLabel.innerText = `Year: ${dates[0]}`;  
         updateChart();
     });
 
@@ -96,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Updated label and chart when slider moves
         yearSlider.addEventListener("input", function () {
             let index = parseInt(this.value);
-            yearLabel.innerText = dates[index];
+            yearLabel.innerText = "Year: " + dates[index];
             updateChart();
         });
     
