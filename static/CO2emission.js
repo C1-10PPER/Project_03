@@ -17,7 +17,7 @@ let yearSlider = sliderContainer.append("input")
 let yearLabel = d3.select("#selectedYear");
 
 // Load CSV file
-d3.csv("Clean_Data/Co2_Emissions.csv").then(function(data) {
+d3.csv("Clean_Data/co2_Emissions.csv").then(function(data) {
     // Convert year and value to numbers
     data.forEach(d => {
         d.year = +d.year;
