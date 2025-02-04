@@ -8,6 +8,7 @@ After assembling our datasets, we utilized JavaScript to develop interactive vis
 
 
 Resources
+
 For this project we have made use of different websites, Xpert Learning Assistant, and class resources as a reference. Data was pulled from the following site.
 
 sources:
