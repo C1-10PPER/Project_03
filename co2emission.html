@@ -17,24 +17,7 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
-<style>
-  /* Custom Navbar Styling */
-  .navbar {
-      background: linear-gradient(45deg, #2196F3, #673AB7);
-  }
-  .navbar a {
-      color: black !important;
-  }
-  .navbar .dropdown-menu {
-      background-color: #673AB7;
-  }
-  .navbar .dropdown-item {
-      color: white !important;
-  }
-  .navbar .dropdown-item:hover {
-      background-color: #512DA8;
-  }
-</style>
+
 
 <body>
 
@@ -68,9 +51,18 @@
           </div>
         </div>
     </nav>
-
+    <!-- <div class="container">
+      <canvas id="co2emission"></canvas>
+  </div> -->
+  
    
-   
+  <div id="chart-container">
+    <canvas id="co2emission"></canvas>
+</div>
+<div id="sliderContainer">
+  
+  <label>Year:<span id="selectedYear"></span></label>
+</div>
     <!-- JavaScript file -->
     <script src="static/CO2emission.js"></script>
 

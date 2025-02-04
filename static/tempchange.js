@@ -1,19 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Created a street tile layer
+    // Create a street tile layer
     let street = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     });
 
-    // Created the map object with center and zoom options for global view
+    // Create the map object with center and zoom options for global view
     var map = L.map('map', {
-        center: [20, 0],  
-        zoom: 2,         
-        layers: [street]  
+        center: [20, 0],
+        zoom: 2,
+        layers: [street]
     });
 
-    let heatLayer; 
-    let currentYear = 2023; 
+    let heatLayer;
+    let currentYear = 2023;
 
     // Function to create a heatmap
     function createHeatmap(data, year) {
@@ -22,14 +22,15 @@ document.addEventListener("DOMContentLoaded", function () {
         data.forEach(row => {
             let lat = parseFloat(row.latitude);
             let lon = parseFloat(row.longitude);
-            let tempChange = parseFloat(row[year]); 
+            let tempChange = parseFloat(row[year]);
 
             if (!isNaN(lat) && !isNaN(lon) && !isNaN(tempChange)) {
                 heatData.push([lat, lon, tempChange]);
             }
         });
 
-        console.log(`Heatmap Data for ${year}:`, heatData); 
+        console.log(`Heatmap Data for ${year}:`, heatData);
+
         // Remove previous heat layer if it exists
         if (heatLayer) {
             map.removeLayer(heatLayer);
@@ -61,14 +62,15 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
-        createHeatmap(data, currentYear); 
+        createHeatmap(data, currentYear);
+
         // Function to add a floating year display and slider to the map
         function addYearSlider() {
             let sliderContainer = L.control({ position: "topright" });
 
             sliderContainer.onAdd = function () {
                 let div = L.DomUtil.create("div", "year-slider");
-                
+
                 // Style adjustments for better visibility
                 div.style.background = "rgba(255, 255, 255, 0.8)";
                 div.style.padding = "15px";
@@ -78,27 +80,20 @@ document.addEventListener("DOMContentLoaded", function () {
                 div.style.textAlign = "center";
 
                 // Create slider and floating year display
-                div.innerHTML = ` 
+                div.innerHTML = `
                     <div id="yearDisplay" style="font-size: 20px; font-weight: bold; margin-bottom: 5px; color: #333;">
                         Year: <span id="yearValue">${currentYear}</span>
                     </div>
                     <input type="range" id="yearRange" min="1961" max="2023" step="1" value="${currentYear}" style="width: 200px;">
                 `;
 
-                // Add event listener to update heatmap and floating year display when scrolling
                 let yearDisplay = div.querySelector("#yearValue");
                 let slider = div.querySelector("#yearRange");
 
+                // Add event listener for real-time update
                 slider.addEventListener("input", function (event) {
                     let selectedYear = event.target.value;
-
-                    // Update floating year display with smooth transition
-                    yearDisplay.style.opacity = "0.5";
-                    setTimeout(() => {
-                        yearDisplay.textContent = selectedYear;
-                        yearDisplay.style.opacity = "1";
-                    }, 150);
-
+                    yearDisplay.textContent = selectedYear;
                     createHeatmap(data, selectedYear);
                 });
 
@@ -122,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 div.style.borderRadius = "5px";
                 div.style.boxShadow = "0 0 5px rgba(0,0,0,0.3)";
                 div.style.fontSize = "14px";
-                div.innerHTML = ` 
+                div.innerHTML = `
                     <strong>Temperature Change</strong><br>
                     <i style="background: blue; width: 12px; height: 12px; display: inline-block; margin-right: 5px;"></i> Cooling <br>
                     <i style="background: lime; width: 12px; height: 12px; display: inline-block; margin-right: 5px;"></i> Stable <br>
