@@ -16,7 +16,7 @@ After assembling our datasets, we utilized JavaScript to develop interactive vis
 
 Ethical Considerations
 
-For our project, we only used open sourced publicly available data sets from reputable organizations to compile data for our project. Facts are not considered original and therefore may not be copyrighted. We also did not use any personal identifying information for our project. The data is broad in scope and represents the full population and does not specifify racial backgrouds.
+For our project, we only used open sourced publicly available data sets from reputable organizations to compile data for our project. Facts are not considered original and therefore may not be copyrighted. We also did not use any personal identifying information for our project. The data is broad in scope and represents the full population and does not specify racial backgrounds.
 
 
 Resources
