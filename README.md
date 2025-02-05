@@ -23,14 +23,14 @@
 
 * For this project we have made use of different websites, Xpert Learning Assistant, and class resources as a reference. Data was pulled from the following site.
 
-* sources:
+## sources:
 
-https://climatedata.imf.org/pages/climatechange-data
+    https://climatedata.imf.org/pages/climatechange-data
 
-https://www.who.int/data/gho/data/themes/air-pollution/
+    https://www.who.int/data/gho/data/themes/air-pollution/
+    total-burden-of-disease-from-household-and-ambient-air-pollution 
 
-total-burden-of-disease-from-household-and-ambient-air-pollution 
-https://opencagedata.com/
+    https://opencagedata.com/
 
 
 
