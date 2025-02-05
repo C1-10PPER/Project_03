@@ -38,3 +38,5 @@ Cleaned data files are found in the Clean_Data folder.
 SQL quesries used to build DB, Tables and cleaning the data are found in DataBaseQueries folder
 The image if our home page is found in image folder
 Initial proposal, PowerPoint presentation, are located in Project_03 folder.
+
+GitHub pages has also been created and available for viewing.
