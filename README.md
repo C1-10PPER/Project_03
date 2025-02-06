@@ -27,8 +27,7 @@ Group 5:
 
    * https://climatedata.imf.org/pages/climatechange-data
 
-   * https://www.who.int/data/gho/data/themes/air-pollution/
-    total-burden-of-disease-from-household-and-ambient-air-pollution 
+   * https://www.who.int/data/gho/data/themes/air-pollution/total-burden-of-disease-from-household-and-ambient-air-pollution 
 
    * https://opencagedata.com/
 
