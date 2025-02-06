@@ -44,3 +44,4 @@ Initial proposal, PowerPoint presentation, are located in Project_03 folder.
 
 ## Miscellaneous Notes:
 GitHub pages has also been created and available for viewing.
+We used Echarts javascript library for the Pie Chart to satisfy one of the project requirements.
