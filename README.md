@@ -23,7 +23,7 @@
 
 * For this project we have made use of different websites, Xpert Learning Assistant, and class resources as a reference. Data was pulled from the following site.
 
-## sources:
+## Sources:
 
     https://climatedata.imf.org/pages/climatechange-data
 
@@ -42,4 +42,5 @@ SQL quesries used to build DB, Tables and cleaning the data are found in DataBas
 The image if our home page is found in image folder
 Initial proposal, PowerPoint presentation, are located in Project_03 folder.
 
+## Miscellaneous Notes:
 GitHub pages has also been created and available for viewing.
