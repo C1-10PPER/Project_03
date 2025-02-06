@@ -1,7 +1,6 @@
 ## Project_03:  Global Climate Change
 
-
-* Group 5: 
+Group 5: 
 
 1. Casey Wright
 2. Hawa Abdo
