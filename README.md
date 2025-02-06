@@ -1,8 +1,5 @@
-<<<<<<< HEAD
+
 ## Project_03 : Global Climate Change
-=======
-## Project_03:  Global Climate Change
->>>>>>> c820ec746e915959d482169255df60f240e62208
 
 Group 5: 
 
