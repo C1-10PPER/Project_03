@@ -1,4 +1,5 @@
-## Project_03: Global Climate Change
+## Project_03: 
+# Global Climate Change
 
 * Group 5: 
 
@@ -14,12 +15,12 @@
 * After assembling our datasets, we utilized JavaScript to develop interactive visualizations that illustrate trends in global climate change over time. This site showcases these visualizations, along with detailed explanations and insights into significant patterns and trends observed in the data.
 
 
-## Ethical Considerations
+## Ethical Considerations:
 
 * For our project, we only used open sourced publicly available data sets from reputable organizations to compile data for our project. Facts are not considered original and therefore may not be copyrighted. We also did not use any personal identifying information for our project. The data is broad in scope and represents the full population and does not specify racial backgrounds.
 
 
-## Resources
+## Resources:
 
 * For this project we have made use of different websites, Xpert Learning Assistant, and class resources as a reference. Data was pulled from the following site.
 
@@ -34,7 +35,7 @@
 
 
 
-## File Locations
+## File Locations:
 
 * Source data files are found in the Raw_Data folder.
 Cleaned data files are found in the Clean_Data folder.
@@ -43,5 +44,6 @@ The image if our home page is found in image folder
 Initial proposal, PowerPoint presentation, are located in Project_03 folder.
 
 ## Miscellaneous Notes:
+
 GitHub pages has also been created and available for viewing.
 We used Echarts javascript library for the Pie Chart to satisfy one of the project requirements.
