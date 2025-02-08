@@ -14,6 +14,18 @@ Group 5:
 
 * After assembling our datasets, we utilized JavaScript to develop interactive visualizations that illustrate trends in global climate change over time. This site showcases these visualizations, along with detailed explanations and insights into significant patterns and trends observed in the data.
 
+## Navigating the Data Visualization
+
+* The data visualization can be viewed through GitHub pages from the following URL: https://c1-10pper.github.io/Project_03/
+* When launched, the data visualization will start from the homepage which provides an overview of the project goals and data objectives.
+* From the homepage, users can select the drop down menu which gives users the option to select between Home (which will take you back to the homepage screen) and Visualizations.
+* Selecting Visualizations in the dropdown menu will give users the option to select from the following:
+  * Temperature Change
+  * CO2 Emissions
+  * Sea Level Change
+  * Climate Related Disasters
+  * Illness Related to Polution
+* After selecting any of the five visualizations, the user can use the dropdown menu to either go back to the homepage or select from the five visualizations. 
 
 ## Ethical Considerations:
 
