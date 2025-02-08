@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let disasterColorMap = {}; // Map to store assigned colors
 
     // Loaded CSV data
-    d3.csv("Clean_Data/climate_related_disasters_frequncy.csv").then((data) => {
+    d3.csv("Clean_Data/climate_related_disasters_frequency.csv").then((data) => {
         let columns = data.columns.slice(11, 58); // Adjust based on actual structure
         dates = columns.map(col => col.trim());
 
